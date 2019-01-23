@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "name": "api_handler_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::107097132140:role/mytodo-dev-api_handler",
+      "role_name": "mytodo-dev-api_handler"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:107097132140:function:mytodo-dev"
+    },
+    {
+      "name": "jwt_auth_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::107097132140:role/mytodo-dev-jwt_auth",
+      "role_name": "mytodo-dev-jwt_auth"
+    },
+    {
+      "name": "jwt_auth",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:ap-northeast-2:107097132140:function:mytodo-dev-jwt_auth"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "ufpgl8pb07",
+      "rest_api_url": "https://ufpgl8pb07.execute-api.ap-northeast-2.amazonaws.com/api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
